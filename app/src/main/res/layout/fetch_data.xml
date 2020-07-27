@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:elevation="5dp"
+
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:drawableStart="@drawable/ic_location_on_red_24dp"
+               android:padding="10dp"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Remind"
+                   android:id="@+id/remind"
+                   android:textSize="20sp"
+                   android:textColor="#000"
+                   android:layout_gravity="end"
+                   android:padding="10dp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Latitude"
+                       android:id="@+id/lati"
+                       android:padding="10dp"
+                       android:textSize="15dp"
+                       android:layout_weight="1"
+                       android:layout_gravity="right"
+                       android:gravity="right"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Longitude"
+                       android:id="@+id/longi"
+                       android:padding="10dp"
+                       android:textSize="15dp"
+                       android:layout_weight="1"
+                       android:layout_gravity="right"
+                       android:gravity="right"/>
+               </LinearLayout>
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
